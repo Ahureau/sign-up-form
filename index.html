@@ -20,7 +20,7 @@
         </div>
         <div class="formContainer">
             <div class="pitchContainer">
-                <h1>Sign up and get sailing</h1>
+                <h1>Sign up and start your journey</h1>
                 <p>We'll reach out on how to reach our sailboat. <br> (of course this is a fake sign-up form, don't actually expect to be going anywhere)</p>
             </div>
             <div class="formFields">
@@ -45,12 +45,18 @@
                         <label for="password">Password:</label>
                         <input type="password" name="password" id="password" pattern=".{8,}" required
                             title="Password must be at least 8 characters long.">
+                            <div class="errorContainer">
+                                <p class="errorText" aria-live="polite"></p>
+                            </div>
                     </div>
                     <div class="input">
                         <label for="passwordConfirm">Confirm password</label>
                         <input type="password" name="password" id="passwordConfirm" required>
+                        <div class="errorContainer">
+                            <p class="errorText" aria-live="polite"></p>
+                        </div>
                     </div>
-                    <button class="formButton">Sign up</button>
+                    <button id="formButton" class="formButton">Sign up</button>
                 </form>
                 <p>Already have an account? <a href="">Log in</a></p> <!--link without href-->
             </div>
