@@ -8,34 +8,52 @@
     <script src="scripts.js" defer></script>
 </head>
 <body>
-    <div class="imageContainer"></div>
-    <div class="formContainer">
-        <div class="pitchContainer">
-            <h1>Some form pitch</h1>
-            <p>Some more pitching</p>
+    <div class="signUpContainer">
+        <div class="imageContainer">
+            <img class="signUpImage" src="./images/photo by daniel lincoln on unsplash.jpg" alt="sailboat in the sunsait">
+            <div class="imageOverlay">
+                <div class="overlayText">
+                    <h1>Sail with us into the sunset</h1>
+                    <p>The experience of a lifetime</p>
+                </div>
+            </div>
         </div>
-        <div class="formFields">
-            <form>
-                <label for="firstName">First Name</label>
-                <input type="text" name="firstName" id="firstName" required>
-
-                <label for="lastName">Last Name</label>
-                <input type="text" name="lastName" id="lastName" required>
-
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
-
-                <label for="phone">Phone number</label>
-                <input type="tel" name="phone" id="phone" required>
-
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" required>
-
-                <label for="passwordConfirm">Confirm password</label>
-                <input type="password" name="password" id="passwordConfirm" required>
-
-                <button>Sign up</button>
-            </form>
+        <div class="formContainer">
+            <div class="pitchContainer">
+                <h1>Sign up and get sailing</h1>
+                <p>We'll reach out on how to reach our sailboat. <br> (of course this is a fake sign-up form, don't actually expect to be going anywhere)</p>
+            </div>
+            <div class="formFields">
+                <form class="theForm">
+                    <div class="input">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName" pattern="^[^0-9]+$" title="Your name should not have numbers in it" required>
+                    </div>
+                    <div class="input">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" pattern="^[^0-9]+$" title="Your name should not have numbers in it" required>
+                    </div>
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="input">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" name="phone" id="phone" required>
+                    </div>
+                    <div class="input">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" pattern=".{8,}" required
+                            title="Password must be at least 8 characters long.">
+                    </div>
+                    <div class="input">
+                        <label for="passwordConfirm">Confirm password</label>
+                        <input type="password" name="password" id="passwordConfirm" required>
+                    </div>
+                    <button class="formButton">Sign up</button>
+                </form>
+                <p>Already have an account? <a href="">Log in</a></p> <!--link without href-->
+            </div>
         </div>
     </div>
 </body>
