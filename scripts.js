@@ -1,12 +1,14 @@
 const button = document.getElementById("formButton");
 const password = document.getElementById("password");
 const passwordConfirm = document.getElementById("passwordConfirm");
-const errorText = document.getElementsByClassName("errorText");
+const passwordError = document.querySelector("#password + .errorContainer .errorText");
 
 function passwordCheck() {
     if (passwordConfirm.value !== password.value) {
-        passwordConfirm.setCustomValidity("The password doesn't match.");
-    } else passwordConfirm.setCustomValidity("");
+        passwordError.classList.add("visible");
+    } else {
+        passwordError.classList.remove("visible");
+    }
 }
 
 passwordConfirm.addEventListener("focusout", passwordCheck);

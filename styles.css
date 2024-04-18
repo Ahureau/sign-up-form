@@ -176,6 +176,7 @@ h1 {
 
 label {
     line-height: 1rem;
+    margin-bottom: 0.6rem;
 }
 
 input {
@@ -190,7 +191,6 @@ input {
 .input {
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
 }
 
 input:focus {
@@ -202,22 +202,19 @@ input:user-invalid {
     outline-color: red;
 }
 
-.errorContainer {
-    height: 1rem;
-}
-
 .errorText {
+    display: flex;
     color: transparent;
+    align-items: center;
     height: 0;
     user-select: none;
 }
 
 .errorText.visible {
-    display: flex;
     height: 1rem;
-    align-items: center;
     color: red;
     user-select: auto;
+    margin-top: 0.6rem;
 }
 
 button {

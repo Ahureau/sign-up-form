@@ -46,14 +46,14 @@
                         <input type="password" name="password" id="password" pattern=".{8,}" required
                             title="Password must be at least 8 characters long.">
                             <div class="errorContainer">
-                                <p class="errorText" aria-live="polite"></p>
+                                <p class="errorText" aria-live="polite">Test</p>
                             </div>
                     </div>
                     <div class="input">
                         <label for="passwordConfirm">Confirm password</label>
                         <input type="password" name="password" id="passwordConfirm" required>
                         <div class="errorContainer">
-                            <p class="errorText" aria-live="polite"></p>
+                            <p class="errorText" aria-live="polite">Test</p>
                         </div>
                     </div>
                     <button id="formButton" class="formButton">Sign up</button>
@@ -64,3 +64,6 @@
     </div>
 </body>
 </html>
+
+
+<!-- So the theory is that I set a custom message and I just don't allow the form to submit until the function that sets the message returns true or something -->
