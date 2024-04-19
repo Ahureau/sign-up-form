@@ -43,27 +43,24 @@
                     </div>
                     <div class="input">
                         <label for="password">Password:</label>
-                        <input type="password" name="password" id="password" pattern=".{8,}" required
-                            title="Password must be at least 8 characters long.">
-                            <div class="errorContainer">
-                                <p class="errorText" aria-live="polite">Test</p>
-                            </div>
+                        <input type="password" name="password" id="password" pattern=".{8,}" required>
+                        <div class="errorContainer">
+                            <p class="errorText" aria-live="polite">Your password needs at least 8 characters</p>
+                        </div>
                     </div>
                     <div class="input">
                         <label for="passwordConfirm">Confirm password</label>
                         <input type="password" name="password" id="passwordConfirm" required>
                         <div class="errorContainer">
-                            <p class="errorText" aria-live="polite">Test</p>
+                            <p class="errorText" aria-live="polite">The passwords should match</p>
                         </div>
                     </div>
                     <button id="formButton" class="formButton">Sign up</button>
                 </form>
                 <p>Already have an account? <a href="">Log in</a></p> <!--link without href-->
             </div>
+            <img src="./images/Logo.png" alt="SailAway logo" width="100" height="100" class="logo">
         </div>
     </div>
 </body>
 </html>
-
-
-<!-- So the theory is that I set a custom message and I just don't allow the form to submit until the function that sets the message returns true or something -->

@@ -151,10 +151,16 @@ h1 {
 
 /* Form */
 
+.pitchContainer {
+    display: flex;
+    flex-direction: column;
+}
+
 .formContainer {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
     padding: 1rem;
 }
@@ -166,6 +172,7 @@ h1 {
     flex-direction: column;
     gap: 2rem;
     padding: 2rem;
+    width: 100%;
 }
 
 .theForm {
@@ -198,8 +205,9 @@ input:focus {
     outline: 2px solid black;
 }
 
-input:user-invalid {
-    outline-color: red;
+input:user-invalid,
+.userInvalid {
+    outline-color: red !important;
 }
 
 .errorText {
@@ -220,6 +228,12 @@ input:user-invalid {
 button {
     height: 2.5rem;
     margin: 1.125rem 0 0 0;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 1rem;
 }
 
 
